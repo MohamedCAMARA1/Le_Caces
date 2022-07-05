@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {StyleSheet, Image, Text, View} from 'react-native';
+import {StyleSheet, Platform, Image, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 export default function LaunchScreen() {
@@ -9,11 +9,11 @@ export default function LaunchScreen() {
     //   <Text style={styles.ScreenStyle}>Ecran de lancement</Text>
     // </View>
 
-    <LinearGradient colors={['#3EADCF', '#B0E7FF', '#ABE9CD', '#69A4FE']}>
+    <LinearGradient colors={['#70A1FF', '#90A1FF', '#FFFFFF', '#B9B5AD']}>
       <View style={styles.ViewStyle}>
         <Image
-          style={styles.logo}
-          source={require('../../assets/logo/sans_ombre.png')}
+          style={[styles.logo, styles.ImgShadow]}
+          source={require('../../assets/logo/logo_CACES_1.png')}
         />
       </View>
     </LinearGradient>
@@ -23,7 +23,9 @@ export default function LaunchScreen() {
 const styles = StyleSheet.create({
   ViewStyle: {
     height: '100%',
-    // backgroundColor: '#B0E7FF',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   logo: {
