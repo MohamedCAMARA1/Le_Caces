@@ -1,3 +1,7 @@
+//mis en place dans xcode
+//il reste celui d'Android
+//pas nécessaire de coder ??
+
 import React from 'react';
 
 import {StyleSheet, Platform, Image, Text, View} from 'react-native';
@@ -13,7 +17,7 @@ export default function LaunchScreen() {
       <View style={styles.ViewStyle}>
         <Image
           style={[styles.logo, styles.ImgShadow]}
-          source={require('../../assets/logo/logo_CACES_1.png')}
+          source={require('../../assets/logo/logo_CACES.png')}
         />
       </View>
     </LinearGradient>
